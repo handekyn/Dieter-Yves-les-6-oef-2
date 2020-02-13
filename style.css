@@ -1,27 +1,33 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  display: block;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-header {
-  background-color: rgb(34, 133, 246);
-  height: 45px;
+.top-header {
+  background-color: rgb(57, 141, 190);
+  height: 44px;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .inner {
   width: 400px;
 }
+
+.hamburger {
+}
+
 .logo {
   float: left;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px;
   text-decoration: none;
   color: white;
   padding-top: 12px;
@@ -37,56 +43,194 @@ header {
   width: 100%;
   text-align: center;
   height: 100px;
+  margin-bottom: 64px;
+}
+
+.main {
+  padding: 32px 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5385c1;
+}
+h1 {
+  font-size: 2.7em;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: rgb(34, 133, 246);
   font-size: 2em;
-  font-weight: lighter;
-  margin: 25px 0px 16px 0px;
+  font-weight: 100;
 }
 
 h3 {
-  color: rgb(34, 133, 246);
-  font-size: 1.5em;
-  font-weight: lighter;
-  margin: 25px 0px 16px 0px;
+  font-size: 1.35em;
+  font-weight: 300;
+  margin: 0px 0px 16px 0px;
 }
 
+h4 {
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+h6 {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+
+dt {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+dl p {
+  margin-bottom: 32px;
+}
 p {
   color: gray;
-  font-size: 0.9em;
-  font-weight: lighter;
-  margin-bottom: 20px;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 32px;
+  line-height: 1.7em;
 }
 
 .content {
   width: 90%;
   margin: auto;
-  line-height: 1.7em;
+}
+.content h2 {
+  margin-bottom: 28px;
 }
 
-.content p {
-  margin-top: 30px;
+.row-1,
+.row-2,
+.row-3 {
+  width: 90%;
+  margin: auto;
 }
 
-.row-1 {
-  width: 90%;
+.row-1-left,
+.row-1-right {
+  width: 100%;
   margin: auto;
-  line-height: 1.7em;
 }
-.row-2 {
-  width: 90%;
+
+.row-2-left,
+.row-2-middle,
+.row-2-right {
+  width: 100%;
   margin: auto;
-  line-height: 1.7em;
 }
-.ligne {
-  border-bottom: 1px solid lightgray;
+
+hr {
   width: 90%;
+  border-style: solid 1px gray;
+  margin: 44px auto;
 }
+.hr-column {
+  width: 100%;
+  border-style: solid 1px gray;
+  margin: 44px auto;
+}
+
+.row-3-left,
+.row-3-right {
+  text-align: center;
+}
+
 .elements {
-  margin-bottom: 28px;
-  font-size: 1.75;
-  font-weight: 100;
-  margin-bottom: 28px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+blockquote {
+  border-left: solid 4px #dbdbdb;
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 2em;
+}
+
+.actions {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  height: 2.85em;
+  line-height: 2.95em;
+  text-decoration: none;
+  background-color: #5a5a5a;
+  color: white;
+}
+
+li {
+  padding-top: 16px;
+}
+.special {
+  background-color: #5385c1;
+}
+
+.alt {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px #dbdbdb;
+  color: #555555;
+}
+ul {
+  padding: 0;
+}
+
+@media screen and (min-width: 736px) {
+  .row-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row-1-left,
+  .row-1-right {
+    width: calc((100% - 24px) / 2);
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+  .banner p {
+    font-size: 0.9em;
+    margin-bottom: 21.6px;
+  }
+  .banner {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  .row-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .row-2-left,
+  .row-2-middle,
+  .row-2-right {
+    width: calc((100% - 48px) / 3);
+    margin: 0;
+  }
 }
