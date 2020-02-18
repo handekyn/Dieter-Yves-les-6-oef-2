@@ -21,8 +21,24 @@ body {
     width: 400px;
 }
 
-.hamburger {
-    
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+}
+
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
 }
 
 .logo {
