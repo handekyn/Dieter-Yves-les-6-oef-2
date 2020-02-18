@@ -21,7 +21,8 @@ body {
   width: 400px;
 }
 
-.hamburger {
+.hamburger hamburger {
+  width: 30px;
 }
 
 .logo {
@@ -48,6 +49,10 @@ body {
 
 .main {
   padding: 32px 0px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
 }
 
 h1,
@@ -166,27 +171,40 @@ blockquote {
   padding: 0.5em 0 0.5em 2em;
 }
 
-.actions {
+ul.actions li {
   text-decoration: none;
   list-style: none;
   text-align: center;
 }
 
-.button {
-  width: 100%;
+li {
+  padding-top: 16px;
+}
+.button.special {
+  background-color: #5385c1;
+}
+/*.button {
+  width: 90%;
   display: inline-block;
-  height: 2.85em;
+  height: 3rem;
   line-height: 2.95em;
   text-decoration: none;
   background-color: #5a5a5a;
   color: white;
-}
-
-li {
-  padding-top: 16px;
-}
-.special {
-  background-color: #5385c1;
+  padding: 0 1.5rem;
+}*/
+.button {
+  width: 90%;
+  background-color: #5a5a5a;
+  border-radius: 0;
+  border: 0;
+  color: white;
+  display: inline-block;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  width: 100%;
+  text-align: center;
 }
 
 .alt {
@@ -194,8 +212,17 @@ li {
   box-shadow: 0 0 0 2px #dbdbdb;
   color: #555555;
 }
-ul {
+
+.button.small {
+  font-size: 0.8rem;
+  height: 2.5rem;
+  line-height: 2.5em;
+}
+.actions.fit {
+  display: flex;
+  margin: 0;
   padding: 0;
+  table-layout: fixed;
 }
 
 @media screen and (min-width: 736px) {
