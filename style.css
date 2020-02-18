@@ -21,8 +21,8 @@ body {
   width: 400px;
 }
 
-.hamburger hamburger {
-  width: 30px;
+.inner a {
+  margin-top: 16px;
 }
 
 .logo {
@@ -223,6 +223,84 @@ li {
   margin: 0;
   padding: 0;
   table-layout: fixed;
+}
+
+.banner {
+  padding: 6em 0 10.8em 0;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-top: 0.5em solid #5385c1;
+  margin-bottom: 35px;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  font-weight: 100;
+  color: #fff;
+  padding: 0;
+}
+
+.banner p {
+  color: rgba(255.255.255, 0.55);
+  margin-bottom: 1.75em;
+  font-size: 0.85m;
+}
+
+.one {
+  width: 90%;
+  margin: auto;
+}
+
+.two {
+  background-color: #5385c1;
+  text-align: center;
+  padding: 32px 0 32px 0;
+}
+.articles {
+  text-align: center;
+  margin-bottom: 48px;
+  padding-bottom: 40px;
+}
+
+.border-bottom {
+  border-bottom: solid 1px #dbdbdb;
+  width: 100%;
+}
+
+.articles h3 {
+  margin-bottom: 21.6px;
+}
+
+.two h2,
+.two p {
+  color: white;
+  margin-bottom: 14px;
+}
+
+.wrapper {
+  width: 90%;
+  border: solid 1px rgba(255, 255, 255, 0.25);
+  padding: 48px 24px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+.two h3 {
+  font-size: 1.35em;
+  color: white;
+}
+
+.two img {
+  padding-bottom: 16px;
+  border-radius: 50%;
+}
+
+.two header p {
+  font-size: 0.85em;
+  font-weight: lighter;
 }
 
 @media screen and (min-width: 736px) {
