@@ -183,16 +183,6 @@ li {
 .button.special {
   background-color: #5385c1;
 }
-/*.button {
-  width: 90%;
-  display: inline-block;
-  height: 3rem;
-  line-height: 2.95em;
-  text-decoration: none;
-  background-color: #5a5a5a;
-  color: white;
-  padding: 0 1.5rem;
-}*/
 .button {
   width: 90%;
   background-color: #5a5a5a;
@@ -220,9 +210,36 @@ li {
 }
 .actions.fit {
   display: flex;
-  margin: 0;
-  padding: 0;
-  table-layout: fixed;
+
+  widows: 100%;
+}
+.actions.fit li {
+  width: 120px;
+  margin: auto;
+}
+.button.disabled {
+  opacity: 0.4;
+  background-color: #9a9a9a;
+  color: white;
+}
+.actions {
+  margin-bottom: 32px;
+}
+.left.right {
+  margin-bottom: 32px;
+}
+image,
+img {
+  width: 139px;
+  height: 47px;
+}
+.image.Left {
+  float: left;
+  padding: 0px 24px 16px 0px;
+}
+.image.right {
+  float: right;
+  padding: 0px 0px 16px 24px;
 }
 
 .banner {
