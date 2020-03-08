@@ -20,24 +20,24 @@ body {
 .inner {
   width: 400px;
 }
+.tete {
+  display: flex;
+}
 
 .inner a {
   margin-top: 16px;
+  color: white;
 }
 
-.logo {
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 30px;
-  text-decoration: none;
+#header.logo {
+}
+
+.nav {
+  float: right;
   color: white;
   line-height: inherit;
   font-weight: bold;
-}
-
-nav {
-  display: none;
-  justify-content: space-between;
+  line-height: 3.5em;
 }
 
 .baner {
@@ -252,7 +252,7 @@ img {
   float: right;
   padding: 0px 0px 16px 24px;
 }
-
+/*page-twoo*/
 .box {
   border: solid 1px #dbdbdb;
   margin-bottom: 2em;
@@ -329,14 +329,36 @@ section.banner {
 
 .two img {
   padding-bottom: 16px;
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
+  max-width: 100%;
+  margin: auto;
 }
-
-.two header p {
-  font-size: 0.85em;
-  font-weight: lighter;
+.inner-three {
+  width: 90%;
+  margin: auto;
 }
-
+header h2,
+p {
+  text-align: center;
+}
+header h2 {
+  margin-top: 32px;
+}
+header,
+p {
+  margin-bottom: 48px;
+}
+.image-fit img {
+  width: 100%;
+  width: 408px;
+  height: 138px;
+  margin: auto;
+}
+.flex-2 article {
+  margin-bottom: 48px;
+}
 @media screen and (min-width: 736px) {
   .row-1 {
     display: flex;
@@ -375,7 +397,6 @@ section.banner {
   .row-3 {
     width: 100%;
     padding-left: 32px;
-
     margin: auto;
   }
 
@@ -396,12 +417,56 @@ section.banner {
     display: block;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-  =}
+  }
+  .one {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .one .border-bottom {
+    border-bottom: none;
+  }
+  .articles {
+    width: 25%;
+  }
+  .one p {
+    text-align: left;
+  }
+  .one h3 {
+    text-align: left;
+  }
+  .border-right {
+    border-right: 1px solid #dbdbdb;
+    padding-right: 5em;
+  }
+  .two .flex-two {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .flex-two .box {
+    width: 21%;
+  }
+  .flex-2 {
+    display: flex;
+  }
+  .flex-2 article {
+    width: 90%;
+  }
+  article h3 {
+    margin-top: 32px;
+    text-align: left;
+  }
+  article p {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .actions {
-    padding: 0;
+    padding: 0 1.5em;
   }
   .stretch {
     display: flex;
@@ -421,5 +486,36 @@ section.banner {
   .button.actions {
     text-align: start;
     width: 100%;
+  }
+
+  .banner h1 {
+    text-align: center;
+  }
+  .articles a {
+    width: 86px;
+  }
+
+  .articles footer {
+    text-align: start;
+  }
+  footer .articles {
+    text-align: start;
+  }
+
+  .flex-two {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 45%;
+  }
+  .inner-two h2,
+  h3 {
+    text-align: center;
+  }
+  .image-fit img {
+    width: 100%;
+    height: 100%;
   }
 }
