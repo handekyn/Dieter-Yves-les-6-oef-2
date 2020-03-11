@@ -15,23 +15,34 @@ body {
   position: sticky;
   display: flex;
   line-height: 2.7em;
-  padding: 0 0 0 15px;
   width: 100%;
+  top: 0;
 }
-.top-header nav {
+.top-header .logo {
   color: white;
-  justify-content: space-between;
-  padding: 5px;
+  margin-left: 100px;
+}
+
+.top-header nav {
   display: none;
 }
 .top-header,
 nav {
   justify-content: space-between;
-  padding-right: 15px;
 }
-
-.inner {
-  width: 400px;
+.hamburger {
+  padding: 5px 90px 0px 0px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+.iner {
+  width: 100%;
 }
 .tete {
   display: flex;
@@ -42,30 +53,19 @@ nav {
   color: white;
 }
 
-#header.logo {
-}
-
-.nav {
-  float: right;
-  color: white;
-  line-height: inherit;
-  font-weight: bold;
-  line-height: 3.5em;
-}
-
 .baner {
   width: 100%;
   text-align: center;
   height: 100px;
-  margin-bottom: 64px;
+  margin: 80px 0 px 64px 0px;
 }
 
 .main {
-  padding: 32px 0px;
+  width: 90%;
+  margin: auto;
 }
 .container {
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 #elements {
   text-align: center;
@@ -79,6 +79,7 @@ h6 {
   color: #5385c1;
   margin-bottom: 1.5em;
   text-align: center;
+  font-weight: 300;
 }
 h1 {
   font-size: 2.7em;
@@ -116,6 +117,7 @@ h6 {
 dt {
   font-weight: 600;
   margin-bottom: 16px;
+  color: #9a9a9a;
 }
 
 dl p {
@@ -185,6 +187,7 @@ blockquote {
   font-style: italic;
   margin: 0 0 2em 0;
   padding: 0.5em 0 0.5em 2em;
+  color: #9a9a9a;
 }
 
 ul.actions li {
@@ -312,9 +315,11 @@ img {
   width: 90%;
   margin: auto;
 }
+.two-two {
+  background-color: #5385c1;
+}
 
 .two {
-  background-color: #5385c1;
   text-align: center;
   padding: 32px 0 32px 0;
 }
@@ -384,6 +389,10 @@ p {
 .flex-2 article {
   margin-bottom: 48px;
 }
+/*page-3*/
+.align-center h2 {
+  font-size: 2.5em;
+}
 @media screen and (min-width: 736px) {
   .row-1 {
     display: flex;
@@ -403,21 +412,42 @@ p {
     font-size: 0.9em;
     margin-bottom: 21.6px;
   }
-  .bannr {
+  .banner {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 980px) {
+  .main-menue p {
+    text-align: center;
+  }
   .top-header nav {
     color: white;
-    justify-content: space-between;
     display: inline;
-    color: white;
+    justify-content: space-between;
+    width: 50%;
   }
   .top-header a {
     color: white;
     padding: 15px;
   }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    display: none;
+  }
+  .align-center p {
+    text-align: center;
+  }
+
+  .baner p {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
   .row-2 {
     display: flex;
     justify-content: space-between;
@@ -432,7 +462,13 @@ p {
   .row-3 {
     width: 100%;
     padding-left: 32px;
-    margin: auto;
+    text-align: center;
+  }
+  .row-3,
+  p {
+    justify-content: space-between;
+    padding: 15px;
+    text-align: right;
   }
 
   .row-3-left {
@@ -453,12 +489,6 @@ p {
     clear: none;
     padding-left: 50px;
   }
-  .row-3,
-  p {
-    display: block;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-  }
   .one {
     display: flex;
     justify-content: space-between;
@@ -471,6 +501,7 @@ p {
     right: 0;
     position: absolute;
     line-height: 9em;
+    padding-right: 100px;
   }
   .nav a {
     padding: 15px;
@@ -493,13 +524,19 @@ p {
     padding-right: 5em;
   }
   .two .flex-two {
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
   }
-  .flex-two .box {
-    width: 21%;
+
+  .two {
+    max-width: 75em;
+    margin: 0 auto;
   }
+  .flex-two .box.person {
+    width: 20%;
+  }
+
   .flex-2 {
     display: flex;
   }
@@ -514,7 +551,6 @@ p {
     text-align: left;
   }
 }
-
 @media screen and (min-width: 480px) {
   .actions {
     padding: 0 1.5em;
@@ -552,13 +588,13 @@ p {
   footer .articles {
     text-align: start;
   }
-
   .flex-two {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
   }
-  .box .person {
+  .flex-two .person {
     width: 45%;
   }
   .box.person h3 {
